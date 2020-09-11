@@ -1,0 +1,1213 @@
+ <?php
+/***************** Ventas Power *****/
+add_action( 'admin_menu', 'ventas_create_admin_menu' , 2); 
+function ventas_create_admin_menu() { 
+ add_menu_page ( 'Ventas Power', 'Ventas Power', 'manage_options', 'ventas_create_admin_menu', 'ventas_pagina_de_opciones', ''.get_template_directory_uri().'/images/production/ico-powerbuilding.png' );
+// add_submenu_page ( 'ventas_create_admin_menu', 'Vendedores Power', 'Vendedores Power', 'manage_options', 'vendedores_power', '' ); 
+}
+function ventas_pagina_de_opciones(){
+    echo("<div class='wrap'><h2>Filtrar Ordenes</h2></div>");
+    echo("<div class='wrap'><br></div>");
+
+  //  if(isset($_POST['action']) && $_POST['action'] == "salvaropciones"){
+  //      update_option('ventas_vendedor',$_POST['vendedor']);
+  //      update_option('ventas_fecha1',$_POST['fecha1']);        
+  //      update_option('ventas_fecha2',$_POST['fecha2']);
+  //      update_option('ventas_producto',$_POST['producto']);
+  //      update_option('ventas_metodo_pago',$_POST['metodo_pago']);
+  //      echo("<div class='updated message' style='padding: 10px'>Opciones guardadas.</div>");
+  //  }
+ ?>
+    <form method='post'>
+        <input type='hidden' name='action' value='salvaropciones'>
+        <table>            
+            <tr>
+                <td>
+                    <label for='cabecera'>Vendedor</label>
+                </td>
+                <td>
+                    <select name="vendedor">  
+                                     
+                       <?php
+                           global $wpdb;   $vende=$_POST["vendedor"];
+                           if ($_POST["vendedor"]==NULl) {
+                               echo '<option value="">Todos</option>'; 
+                           } 
+                           if ($_POST["vendedor"]!=NULl) {
+                              $queried_vendedor = get_post($_POST["vendedor"]);
+                               echo '<option value="'.$queried_vendedor->ID.'">'.$queried_vendedor->post_title.'</option>'; 
+                               echo '<option value="">Todos</option>'; 
+                           }                                                     
+                           $args = array( 'post_type' => 'vendedor', 'post_status' => 'publish');
+                           $loop = new WP_Query( $args );
+                           while ( $loop->have_posts() ) : $loop->the_post();
+                               $post_id = get_the_ID();?>
+                               <option value="<?php echo $post_id; ?>"><?php the_title(); ?></option>
+                             <?php  endwhile;  ?>
+                    </select>   
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <label for='email'>Producto</label>
+                </td>
+                <td>
+                    <select name="producto">  
+             
+                       <?php
+                       $pro=$_POST["producto"];
+                           if ($_POST["producto"]==NULl) {
+                               echo '<option value="">Todos</option>'; 
+                           }                        
+                           global $wpdb;
+                           $result = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE ID = $pro"); 
+                           foreach($result as $r)
+                           { 
+                             echo '<option value="'.$r->ID.'">'.$r->post_title.'</option>'; 
+                             echo '<option value="">Todos</option>'; 
+                           }                            
+                           $result = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE post_type = 'product'"); 
+                           foreach($result as $r)
+                           { 
+                             echo '<option value="'.$r->ID.'">'.$r->post_title.'</option>'; 
+                           }                  
+                           ?>
+                    </select>   
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for='titulo'>Rango fechas:</label>
+                </td>
+                <td>
+                    <input type='date' name='fecha1' id='fecha1'  value='<?php echo $_POST["fecha1"]; ?>'>
+                </td>
+                <td>
+                    <p>Hasta</p>
+                </td>                
+                <td>
+                    <input type='date' name='fecha2' id='fecha2'  value='<?php echo $_POST["fecha2"]; ?>'>
+                </td>                
+            </tr>  
+            <tr>
+                <td>
+                    <label for='titulo'>Método de pago</label>
+                </td>
+                <td>
+                    <select name="metodo_pago">
+                        <?php
+                           if ($_POST["metodo_pago"]!=NULl) {
+                               echo '<option value="">'.$_POST["metodo_pago"].'</option>'; 
+                           } 
+                            
+                        ?>                                               
+                        <option value="">Todos</option>
+                        <option value="paypal">Paypal</option>
+                        <option value="stripe">Stripe</option>
+                    </select>                    
+                </td>
+            </tr>
+            <tr>    
+                <td>
+                    <label for='titulo'>Cupones</label>
+                </td>            
+                <td>
+                    <select name="cupon">
+                        <?php
+                           if ($_POST["cupon"]!=NULl) {
+                               echo '<option value="'.$_POST["cupon"].'">'.$_POST["cupon"].'</option>'; 
+                           } 
+                            
+                        ?>                    
+                        <option value="">Todos</option>
+                       <?php
+                           global $wpdb;
+                           $result = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE post_type = 'shop_coupon' ORDER by post_date DESC"); 
+                           foreach($result as $r)
+                           { 
+                             echo '<option value="'.$r->post_name.'">'.$r->post_name.'</option>'; 
+                           }                  
+                           ?>
+                    </select>                    
+                </td>                
+            </tr>  
+                   
+            <tr>
+                <td colspan='2'>
+                    <input type='submit' value='Buscar'>
+                </td>
+            </tr>
+        </table>
+    </form>
+
+<?php if ($_POST["fecha1"] != NULL OR $_POST["fecha2"] != NULL OR $_POST["metodo_pago"] != NULL OR $_POST["vendedor"] != NULL OR $_POST["producto"] != NULL OR $_POST["cupon"] != NULL) { $comi = $_POST["comision"]/100;?>
+    <form method="post" id="download_form" action="" style="text-align: right;">
+       <input type="hidden" name="fecha1" value="<?php echo $_POST["fecha1"];?>">
+       <input type="hidden" name="fecha2" value="<?php echo $_POST["fecha2"];?>">
+       <input type="hidden" name="vendedor" value="<?php echo $_POST["vendedor"];?>">
+       <input type="hidden" name="producto" value="<?php echo $_POST["producto"];?>">
+       <input type="hidden" name="metodo_pago" value="<?php echo $_POST["metodo_pago"];?>">
+       <input type="hidden" name="cupon" value="<?php echo $_POST["cupon"];?>">
+       <input type="hidden" name="comision" value="<?php echo $comi;?>">
+       <input type="submit" name="exportar_xls" class="button-primary" value="<?php _e('Exportar', 'ventas'); ?>" />
+    </form><br/>
+            
+           <!-- Table -->
+           <table cellspacing='0' bgcolor="#fff" width="100%">
+            <!-- label -->
+             <tr>
+               <td bgcolor="#ccc">N° pedido</td>
+               <td bgcolor="#ccc">Fecha</td>
+               <td bgcolor="#ccc">Artículo # Item Nombre</td>
+               <td bgcolor="#ccc">Pasarela</td>
+               <td bgcolor="#ccc">Coste Artículo</td>
+               <td bgcolor="#ccc">Comision stripe</td>
+               
+               <td bgcolor="#ccc">Comisión paypal</td>
+               <td bgcolor="#ccc">Cupon</td>
+               <td bgcolor="#ccc">Importe cupón</td>
+
+               <td bgcolor="#ccc">total pagado stripe</td>
+             </tr><tr>
+<?php
+$limit = $_POST['limit'];
+$result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE post_type = 'shop_order' AND post_status IN ('wc-processing','wc-completed') ORDER BY ID DESC "); 
+foreach($result_link as $wc_order)
+{
+                 $id_order = $wc_order->ID;
+
+                 
+                 
+                 $cupon_id = NULL;
+                 $comision_stripe = meta_value( '_stripe_fee', $wc_order->ID );
+                 $comision_paypal = meta_value( 'PayPal Transaction Fee', $wc_order->ID );
+                 $importe_cupon = meta_value( '_cart_discount', $wc_order->ID );
+                 $total_pagado_stripe = meta_value( '_stripe_net', $wc_order->ID );                              
+                 $cupon = woocommerce_order_items( coupon, $wc_order->ID );
+                 $fecha = date("Y-m-d", strtotime($wc_order->post_date) );   
+                 $metodo =  meta_value( '_payment_method', $wc_order->ID );
+
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE post_name = '$cupon' "); 
+              foreach($result_link as $r)
+              {
+                      $cupon_id = $r->ID;                      
+              } 
+                            
+if ($cupon != "prueba5852") {
+                
+                
+$result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."woocommerce_order_items WHERE order_item_type = 'line_item' AND order_id = $id_order ORDER BY order_item_id DESC "); 
+foreach($result_link as $r)
+{     
+              $comision_cupon=0;
+              $vendedor_producto=NULL;  
+              $vendedor_cupon=NULL;
+              $coste_articulo = woocommerce_itemrmeta_value('_line_total',  $r->order_item_id );
+              $coste_articulo = round($coste_articulo,2); 
+              $id_p = woocommerce_itemrmeta_value('_product_id',  $r->order_item_id );
+
+              $vendedor_producto = meta_value('vendedores', $id_p); 
+              $vendedor= $vendedor_producto;
+              $vendedor_cupon = meta_value( 'vendedores',  $cupon_id );  
+
+              if ($vendedor_cupon != $vendedor_producto) {
+                $comision_cupon = meta_value( 'comisiones_cupones', $vendedor_cupon ); 
+                $comision_cupon = ($comision_cupon/100);
+              }
+
+
+              $subtotal = ($coste_articulo-$comision_stripe)-$comision_paypal;
+
+              $comi_cupon = ($subtotal*$comision_cupon);
+
+
+           $var='
+                  <!-- fields values -->
+                  <tr>
+                    <td gcolor"'.$celda.'">'.$id_order.'</td>
+                    <td bgcolor"'.$celda.'">'.$fecha.'</td>
+                    <td bgcolor"'.$celda.'">'.$r->order_item_name.'</td>
+                    <td bgcolor"'.$celda.'">'.$metodo.'</td>
+                    <td bgcolor"'.$celda.'">'.$coste_articulo.'</td>
+                    <td bgcolor"'.$celda.'">'.$comision_stripe.'</td>
+                    
+                    <td bgcolor"'.$celda.'">'.$comision_paypal.'</td>
+                    <td bgcolor"'.$celda.'">'.$cupon.'</td>
+                    <td bgcolor"'.$celda.'">'.$importe_cupon.'</td>
+
+                    <td bgcolor"'.$celda.'">'.$total_pagado_stripe.'</td>
+                  </tr>'; 
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }
+                     echo $var;
+                 } }   
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"]){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }} 
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["producto"] == $id_p){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}                
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } } 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){                   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }  
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["producto"] == $id_p){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["producto"] == $id_p){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }                 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["vendedor"] == $vendedor){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                      echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["metodo_pago"] == $metodo){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                              
+                 } } 
+
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["vendedor"] == $vendedor){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                               
+                } }                  
+                
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }
+                     echo $var;
+                 } }   
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["vendedor"] == $vendedor){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }
+                     echo $var;
+                 } }   
+
+                ////////////////////////////////////////////////////////
+
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }   
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["cupon"] == $cupon){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["cupon"] == $cupon){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["cupon"] == $cupon){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }} 
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}                
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } } 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){                   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }  
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                      echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["metodo_pago"] == $metodo && $_POST["cupon"] == $cupon){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                              
+                 } } 
+
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                               
+                 } } 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                               
+                } }   
+
+$ordera = $wc_order->id;                              
+
+}}}
+
+       
+
+       ?>   
+
+<?php 
+            if ($_POST["comision"] != NULL) {
+            echo'  
+            <!-- Comisiones -->
+            <tr><td>&nbsp</td></tr>
+             <tr>
+               <td colspan="9" style="text-align:right">PAGO % COMISIÓN:</td>
+               <td colspan="1">'.$total_total_pagado_stripe*($_POST["comision"]/100).'</td>
+
+             </tr>'; 
+             } 
+echo ' </table>';
+ }}
+
+
+          
+  //////////////////////////////
+  function exportando(){
+    global $wpdb;
+    if ( isset($_POST['exportar_xls'])  ) {
+    $hoy = date("Y-m-d");
+ header('Content-Type: application/vnd.openxmlformats-officedocument.spreadsheetml.sheet');
+ header('Content-Disposition: attachment; filename='.$file);
+    header("Expires: 0");
+    header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+    header("content-disposition: attachment;filename=Ventas-$hoy.xls");
+    echo "<table>
+    <thead>    
+    <tr>
+    <th>".__( 'N PEDIDO','ventas' )."</th>
+    <th>".__( 'FECHA','ventas' )."</th>
+    <th>".__( 'ARTICULO # ITEM NOMBRE','ventas' )."</th>
+    <th>".__( 'CATEGORIA','ventas' )."</th>
+    <th>".__( 'PASARELA','ventas' )."</th>
+    <th>".__( 'TOTAL PAGADO STRIPE','ventas' )."</th> 
+    <th>".__( 'CUPON','ventas' )."</th>
+    <th>".__( 'COSTE ARTICULO','ventas' )."</th>
+    <th>".__( 'COMISION STRIPE','ventas' )."</th>
+
+    <th>".__( 'COMISION PAYPAL','ventas' )."</th>
+    
+    <th>".__( 'IMPORTE CUPON','ventas' )."</th>
+
+     
+
+    <th>".__( 'SUBTOTAL','ventas' )."</th>
+    <th>".__( '% CUPON COMISION POR VENTA','ventas' )."</th> 
+    <th>".__( 'COMISION CUPON','ventas' )."</th>
+    <th>".__( 'TOTAL','ventas' )."</th>
+    </tr>
+    </tr>
+    </thead>
+    ";
+
+ $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE post_type = 'shop_order' AND post_status IN ('wc-processing','wc-completed') ORDER BY ID DESC"); 
+foreach($result_link as $wc_order)
+{
+              $id_order = $wc_order->ID;
+              $vendedor_cupon=NULL;
+              $suma_art = NULL;
+              $art = "";
+                          
+              $cupon_id = NULL;
+              $comision_stripe = meta_value( '_stripe_fee', $wc_order->ID );
+              $comision_paypal = meta_value( 'PayPal Transaction Fee', $wc_order->ID );
+              $importe_cupon = meta_value( '_cart_discount', $wc_order->ID );
+              $total_pagado_stripe = meta_value( '_stripe_net', $wc_order->ID );                              
+              $cupon = woocommerce_order_items( coupon, $wc_order->ID );
+            
+              $fecha = date("Y-m-d", strtotime($wc_order->post_date) );   
+              $metodo =  meta_value( '_payment_method', $wc_order->ID );
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."posts WHERE post_name = '$cupon' "); 
+              foreach($result_link as $r)
+              {
+                      $cupon_id = $r->ID;                      
+              } 
+              $vendedor_cupon = meta_value( 'vendedores',  $cupon_id );     
+
+              // % coisiones por articulos
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."woocommerce_order_items WHERE order_item_type = 'line_item' AND order_id = $id_order ORDER BY order_item_id DESC"); 
+              foreach($result_link as $r)
+              {               
+                      $suma_art= $suma_art + woocommerce_itemrmeta_value('_line_total',  $r->order_item_id );
+              }   
+//
+if ($cupon != "prueba5852") {
+
+$result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."woocommerce_order_items WHERE order_item_type = 'line_item' AND order_id = $id_order ORDER BY order_item_id DESC"); 
+foreach($result_link as $r)
+{     
+              $categoria_h = "";
+              $categoria_pa = "";
+              $vendedor_producto=NULL;  
+              $comision_cupon=NULL;               
+              $coste_articulo = woocommerce_itemrmeta_value('_line_total',  $r->order_item_id );
+              $coste_articulo = round($coste_articulo,2); 
+              $product_id = woocommerce_itemrmeta_value('_product_id',  $r->order_item_id );
+              $id_p = $product_id;
+              foreach((get_the_terms($product_id, 'product_cat' )) as $category) {                
+                  $categoria_p = $category->term_id;
+                  $categoria_h = ", ".$category->name."";               
+              }  
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."term_taxonomy WHERE term_id = '$categoria_p' "); 
+              foreach($result_link as $cr)
+              {                  
+                  $categoria = $cr->parent;
+              }      
+              $result_link = $wpdb->get_results( "SELECT * FROM ".$wpdb->prefix."terms WHERE term_id = '$categoria' "); 
+              foreach($result_link as $cra)
+              {                  
+                  $categoria_pa = $cra->name;
+              } 
+             
+              
+              $vendedor_producto = meta_value( 'vendedores', $id_p ); 
+              $vendedor= $vendedor_producto;
+
+              if ( $vendedor_cupon != $vendedor_producto ) {
+                $comision_cupon = meta_value( 'comisiones_cupones', $vendedor_cupon ); 
+                $comision_cupon = ($comision_cupon/100);
+              }    
+
+
+              $comision_cupon_vendedor = meta_value('comisiones_cupones', $_POST["vendedor"]);
+              $comision_asesoria_vendedor =  meta_value('comisiones_asesorias', $_POST["vendedor"]);
+              $comision_programa_vendedor = meta_value('comisiones_programas', $_POST["vendedor"]);
+              
+
+
+              
+              ///// $comision artículos
+              if ($suma_art>0) {
+                $art = $coste_articulo/$suma_art;
+              }
+              $art_paypal = ($art*$comision_paypal);
+              $art_paypal = round($art_paypal,2);
+
+              $art_stripe = ($art*$comision_stripe);
+              $art_stripe = round($art_stripe,2);
+
+
+              $subtotal = ($coste_articulo-$art_stripe)-$art_paypal;
+
+              $comi_cupon = ($subtotal*$comision_cupon);
+
+              $total = ($subtotal-$comi_cupon);
+             
+             // $comi_cupon = (3*0.1);
+
+            $var = "<tbody><tr>
+            <td>".utf8_encode($id_order)."</td>
+            <td>".utf8_encode($fecha)."</td>
+            <td>".utf8_decode($r->order_item_name)."</td>
+            <td>".utf8_decode($categoria_pa)."".utf8_decode($categoria_h)."</td>
+            <td>".utf8_encode($metodo)."</td>
+            <td>".utf8_encode($total_pagado_stripe)."</td> 
+            <td>".utf8_encode($cupon)."</td>
+            <td>".utf8_encode($coste_articulo)."</td>
+            <td>".utf8_encode($art_stripe)."</td>
+            <td>".utf8_encode($art_paypal)."</td>            
+            <td>".utf8_encode($importe_cupon)."</td>       
+            <td>".utf8_encode($subtotal)."</td> 
+            <td>".round($comision_cupon,2)."</td> 
+            <td>".round($comi_cupon,2)."</td>  
+            <td>".round($total,2)."</td>         
+            </tr></tbody>";
+
+                $subtotal= $coste_articulo-$comision_stripe-$comision_paypal;
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }
+                     echo $var;
+                 } }   
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"]){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }} 
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["producto"] == $id_p){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}                
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } } 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){                   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }  
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["producto"] == $id_p){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["producto"] == $id_p){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }                 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["vendedor"] == $vendedor){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                      echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["metodo_pago"] == $metodo){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                              
+                 } } 
+
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($_POST["vendedor"] == $vendedor){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                               
+                } }                  
+                
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }
+                     echo $var;
+                 } }   
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] == NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["vendedor"] == $vendedor){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }
+                     echo $var;
+                 } }   
+
+                ////////////////////////////////////////////////////////
+
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }   
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["cupon"] == $cupon){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["cupon"] == $cupon){ 
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["cupon"] == $cupon){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }} 
+
+                 if ($_POST["fecha1"] != NULL && $_POST["fecha2"] != NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($fecha >= $_POST["fecha1"] && $fecha <= $_POST["fecha2"] && $_POST["metodo_pago"] == $metodo && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var; 
+                 }}                
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["metodo_pago"] == $metodo && $_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } } 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){                   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;  
+                 } }  
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] != NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["producto"] == $id_p && $_POST["cupon"] == $cupon){                    
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;
+                 } }
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                      echo $var; 
+                 }}
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] != NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["metodo_pago"] == $metodo && $_POST["cupon"] == $cupon){   
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                              
+                 } } 
+
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] != NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["vendedor"] == $vendedor && $_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                               
+                 } } 
+
+                 if ($_POST["fecha1"] == NULL && $_POST["fecha2"] == NULL && $_POST["metodo_pago"] == NULL && $_POST["vendedor"] == NULL && $_POST["producto"] == NULL && $_POST["cupon"] != NULL) {
+                 if ($_POST["cupon"] == $cupon){  
+                 $total_precio_producto = $total_precio_producto + $precio_producto;
+                 $total_comision_stripe = $total_comision_stripe + $comision_stripe;
+                 $total_total_pagado_stripe = $total_total_pagado_stripe + $total_pagado_stripe;
+                 $total_comision_paypal = $total_comision_paypal + $comision_paypal;
+                 $total_importe_cupon = $total_importe_cupon + $importe_cupon;
+                 $totales = $totales + $total;
+                 $cat = $categoria_pa;                 
+                    if ($ordera != $wc_order->id) {
+                       $cant_items = $cant_items + 1;
+                    }                 
+                     echo $var;                               
+                } }   
+
+$ordera = $wc_order->id;                              
+
+}}}
+
+
+            echo "<tr><td></td></tr>";
+            echo "<thead> <tr>";
+            echo "<th bgcolor='#990000' colspan='5'></th>";
+
+            echo "<th bgcolor='#990000' colspan='5'>TOTAL GANANCIA</th>";
+            echo "<th bgcolor='#990000' colspan='6'></th>";          
+            echo "</tr></thead>";
+
+            echo "<tr><td></td></tr>";
+            echo "<thead> <tr>";
+            echo "<th bgcolor='#990000' colspan='5'></th>";
+
+            echo "<th bgcolor='#990000' colspan='5'>".round($totales,2)."</th>";
+            echo "<th bgcolor='#990000' colspan='6'></th>";          
+            echo "</tr></thead>";            
+
+
+       if ($_POST["vendedor"]!=NULL && $_POST["producto"] != NULL) { 
+           if ($cat == "PROGRAMAS POWERBUILDING") {
+              $total_cat=$totales*($comision_programa_vendedor/100);
+           }
+           if ($cat == "ASESORIAS") {
+              $total_cat=$totales*($comision_programa_vendedor/100);
+           }           
+
+            echo "<tr><td></td></tr>";
+            echo "<thead> <tr>";
+            echo "<th bgcolor='#990000' colspan='5'></th>";
+            echo "<th bgcolor='#990000' colspan='5'>COMISION ".$cat."</th>";
+            echo "<th bgcolor='#990000' colspan='6'></th>";          
+            echo "</tr></thead>";
+
+            echo "<tr><td></td></tr>";
+            echo "<thead> <tr>";
+            echo "<th bgcolor='#990000' colspan='5'></th>";
+
+            echo "<th bgcolor='#990000' colspan='5'>".round($total_cat,2)."</th>";
+            echo "<th bgcolor='#990000' colspan='6'></th>";          
+            echo "</tr></thead>";   
+
+        } 
+
+
+    echo "</table>";               
+    exit;
+    }   
+    
+    register_setting( 'theme_settings_page', 'theme_settings_page' );
+    
+}
+add_action( 'admin_init', 'exportando' );
+
+
+
+?>

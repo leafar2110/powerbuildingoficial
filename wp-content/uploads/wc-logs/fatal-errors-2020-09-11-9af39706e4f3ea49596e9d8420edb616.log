@@ -1,0 +1,385 @@
+2020-09-11T03:57:43+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php en la línea 280
+
+2020-09-11T03:59:12+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 297
+
+2020-09-11T03:59:27+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T04:03:38+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T04:55:05+00:00 CRITICAL Maximum execution time of 30 seconds exceeded en /var/www/powerbuildingoficial.com/wp-content/themes/powerbuildingoficial/functions.php en la línea 1894
+
+2020-09-11T05:00:56+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T05:00:56+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T05:00:57+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T05:00:57+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T05:01:01+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 151552 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T05:01:02+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T05:01:09+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 297
+
+2020-09-11T05:01:41+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 200704 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T05:02:01+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 401408 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T05:02:33+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T05:05:55+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 184320 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T05:05:57+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/advanced-custom-fields/includes/locations/class-acf-location.php en la línea 35
+
+2020-09-11T05:07:07+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-query.php en la línea 3432
+
+2020-09-11T05:07:07+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-query.php en la línea 3432
+
+2020-09-11T05:07:07+00:00 CRITICAL Out of memory (allocated 29360128) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-query.php en la línea 3432
+
+2020-09-11T05:07:08+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 417792 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T05:07:17+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 151552 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T05:08:35+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/capabilities.php en la línea 1021
+
+2020-09-11T05:08:49+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T05:08:57+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T05:09:02+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 102400 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T05:32:21+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:33:15+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:34:17+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:37:19+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:38:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:39:20+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:42:24+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:43:22+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:44:34+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:47:25+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:48:26+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:49:27+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:52:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:53:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:54:32+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:57:33+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:58:35+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T05:59:35+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T06:02:36+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function wc_deliver_webhook_async(), 0 passed in /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php on line 287 and exactly 2 expected in /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php:51
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): wc_deliver_webhook_async()
+#1 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters('', Array)
+#2 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#3 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Action.php(22): do_action_ref_array('woocommerce_del...', Array)
+#4 /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/libraries/action-scheduler/classes/ActionScheduler_Abstract_QueueRunner.php(59): ActionScheduler_Action->execute()
+#5 /var/www/powerbuildin en /var/www/powerbuildingoficial.com/wp-content/plugins/woocommerce/includes/wc-webhook-functions.php en la línea 51
+
+2020-09-11T12:56:42+00:00 CRITICAL Maximum execution time of 30 seconds exceeded en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T13:02:24+00:00 CRITICAL Maximum execution time of 30 seconds exceeded en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T15:34:49+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 151552 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T15:35:21+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/meta.php en la línea 964
+
+2020-09-11T15:39:24+00:00 CRITICAL Out of memory (allocated 29360128) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php en la línea 215
+
+2020-09-11T15:42:13+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T15:43:17+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 297
+
+2020-09-11T15:46:22+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T15:47:09+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 81920 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T15:47:18+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T15:47:30+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 81920 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T15:48:43+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+
+2020-09-11T15:48:48+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+
+2020-09-11T15:49:07+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 339968 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T15:49:07+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 311296 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T15:49:11+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T15:49:15+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 200704 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T15:49:32+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/taxonomy.php en la línea 3416
+
+2020-09-11T15:49:37+00:00 CRITICAL Out of memory (allocated 50335744) (tried to allocate 2097160 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2672
+
+2020-09-11T15:49:37+00:00 CRITICAL Out of memory (allocated 48238592) (tried to allocate 2097160 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2672
+
+2020-09-11T15:49:39+00:00 CRITICAL Out of memory (allocated 52436992) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/meta.php en la línea 964
+
+2020-09-11T15:53:30+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T16:00:59+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 90112 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T16:01:03+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 151552 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T16:01:31+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+
+2020-09-11T16:04:40+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php en la línea 271
+
+2020-09-11T16:04:43+00:00 CRITICAL Out of memory (allocated 27262976) (tried to allocate 1052672 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T16:05:12+00:00 CRITICAL Out of memory (allocated 33554432) (tried to allocate 2097160 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T16:13:47+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T16:14:37+00:00 CRITICAL Out of memory (allocated 50331648) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+
+2020-09-11T16:16:07+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T16:16:07+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 135168 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T16:16:17+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T16:16:17+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T16:22:17+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T16:27:28+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 4096 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+
+2020-09-11T16:30:54+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T16:35:37+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 266240 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T16:35:39+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 528384 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T16:35:41+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 528384 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T16:36:05+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+
+2020-09-11T16:36:06+00:00 CRITICAL Out of memory (allocated 27262976) (tried to allocate 2097160 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T16:37:21+00:00 CRITICAL Out of memory (allocated 29360128) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/qty-increment-buttons-for-woocommerce/qty-increment-buttons-for-woocommerce.php en la línea 130
+
+2020-09-11T16:38:12+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php en la línea 78
+
+2020-09-11T16:38:13+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 208896 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T16:38:50+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T16:40:09+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T16:40:54+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 167936 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T16:42:05+00:00 CRITICAL Out of memory (allocated 29360128) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/qty-increment-buttons-for-woocommerce/qty-increment-buttons-for-woocommerce.php en la línea 122
+
+2020-09-11T16:51:13+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T16:56:04+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/formidable/formidable.php en la línea 94
+
+2020-09-11T16:59:16+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T17:03:17+00:00 CRITICAL Out of memory (allocated 25165824) (tried to allocate 339968 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T17:03:26+00:00 CRITICAL Out of memory (allocated 6291456) (tried to allocate 290816 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T17:03:37+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 2097160 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1990
+
+2020-09-11T17:06:14+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 299008 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:07:40+00:00 CRITICAL Out of memory (allocated 29360128) (tried to allocate 65536 bytes) en /var/www/powerbuildingoficial.com/wp-admin/admin-ajax.php en la línea 39
+
+2020-09-11T17:10:06+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 155648 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:10:18+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 303104 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2024
+
+2020-09-11T17:10:46+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 155648 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:10:47+00:00 CRITICAL Out of memory (allocated 2097152) (tried to allocate 151552 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:12:12+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-content/plugins/a3-lazy-load/vendor/composer/ClassLoader.php en la línea 364
+
+2020-09-11T17:13:05+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T17:13:57+00:00 CRITICAL Out of memory (allocated 14680064) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/functions.php en la línea 594
+
+2020-09-11T17:14:26+00:00 CRITICAL Out of memory (allocated 37752832) (tried to allocate 4096 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2666
+
+2020-09-11T17:16:52+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php en la línea 76
+
+2020-09-11T17:18:09+00:00 CRITICAL Out of memory (allocated 10485760) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:18:09+00:00 CRITICAL Out of memory (allocated 20971520) (tried to allocate 151552 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:18:21+00:00 CRITICAL Out of memory (allocated 8388608) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:18:50+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T17:19:37+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T17:22:00+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T17:23:18+00:00 CRITICAL Out of memory (allocated 16777216) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T17:25:00+00:00 CRITICAL Out of memory (allocated 18874368) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:25:00+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 163840 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:25:15+00:00 CRITICAL Out of memory (allocated 48238592) (tried to allocate 1052672 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 2672
+
+2020-09-11T17:28:59+00:00 CRITICAL Out of memory (allocated 23068672) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 323
+
+2020-09-11T17:35:39+00:00 CRITICAL Out of memory (allocated 12582912) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php en la línea 280
+
+2020-09-11T17:36:45+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/pomo/mo.php en la línea 297
+
+2020-09-11T17:36:53+00:00 CRITICAL Out of memory (allocated 4194304) (tried to allocate 159744 bytes) in /var/www/powerbuildingoficial.com/wp-includes/pomo/streams.php on line 215
+
+2020-09-11T17:38:24+00:00 CRITICAL Out of memory (allocated 39845888) (tried to allocate 20480 bytes) en /var/www/powerbuildingoficial.com/wp-includes/wp-db.php en la línea 1989
+

@@ -1,0 +1,16 @@
+2020-09-05T22:42:41+00:00 CRITICAL Uncaught Error: Call to undefined function excerpt() in /var/www/powerbuildingoficial.com/wp-content/themes/powerbuildingoficial/search.php:30
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/template-loader.php(106): include()
+#1 /var/www/powerbuildingoficial.com/wp-blog-header.php(19): require_once('/var/www/powerb...')
+#2 /var/www/powerbuildingoficial.com/index.php(18): require('/var/www/powerb...')
+#3 {main}
+  thrown en /var/www/powerbuildingoficial.com/wp-content/themes/powerbuildingoficial/search.php en la línea 30
+
+2020-09-05T22:43:32+00:00 CRITICAL Uncaught Error: Call to undefined function excerpt() in /var/www/powerbuildingoficial.com/wp-content/themes/powerbuildingoficial/search.php:30
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-includes/template-loader.php(106): include()
+#1 /var/www/powerbuildingoficial.com/wp-blog-header.php(19): require_once('/var/www/powerb...')
+#2 /var/www/powerbuildingoficial.com/index.php(18): require('/var/www/powerb...')
+#3 {main}
+  thrown en /var/www/powerbuildingoficial.com/wp-content/themes/powerbuildingoficial/search.php en la línea 30
+

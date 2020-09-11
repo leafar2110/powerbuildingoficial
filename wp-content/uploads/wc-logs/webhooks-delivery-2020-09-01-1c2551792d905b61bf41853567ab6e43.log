@@ -1,0 +1,3654 @@
+2020-09-01T16:46:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 057a3c6244de24f4dc72cf9487b3af75
+            [Date] => 1 Sep, 2020 @ 16:46
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.10432
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => sHqhDeDxSoyY0DQC1KnFkJFfd7cRJ8gQ6lzXkjaGQEQ=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 057a3c6244de24f4dc72cf9487b3af75
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:46:12 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:46:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 057a3c6244de24f4dc72cf9487b3af75
+            [Date] => 1 Sep, 2020 @ 16:46
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.07444
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 7A0AO9pQb2yzMFwlZ1Sgi/M9D20v7rmJ0cQF8fcEFbw=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 057a3c6244de24f4dc72cf9487b3af75
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:46:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:46:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cd58a44314827e772354d0ca571a409a
+            [Date] => 1 Sep, 2020 @ 16:46
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.09039
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => hSn/7XyZ3pNYuMXfu5Ep/63Jv/VnyHJIPvnjPDzElLE=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cd58a44314827e772354d0ca571a409a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:46:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:46:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cd58a44314827e772354d0ca571a409a
+            [Date] => 1 Sep, 2020 @ 16:46
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.09265
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => /snSoCLfDHLjrayeQcGYj9UFqlo5TM7cT3+G4ygXFO4=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cd58a44314827e772354d0ca571a409a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:46:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:46:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cd58a44314827e772354d0ca571a409a
+            [Date] => 1 Sep, 2020 @ 16:46
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.12714
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 7jR23J+hpp2GwgGzY0ccDuAf/Grin1CcRZuoKNetxJY=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cd58a44314827e772354d0ca571a409a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:46:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:46:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cd58a44314827e772354d0ca571a409a
+            [Date] => 1 Sep, 2020 @ 16:46
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.09903
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => /D1Lqvz9JrNkDcCnm+udu8MuIyESjO9uDrYoJJIfnks=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cd58a44314827e772354d0ca571a409a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:46:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:47:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => d0a4efe3bdccfa78620a93a70402e7dc
+            [Date] => 1 Sep, 2020 @ 16:47
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.09139
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => XUTFsRZF6qfh5+xlXBaKHzQbGUeYSeMRRzjxNHBO1gg=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => d0a4efe3bdccfa78620a93a70402e7dc
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:47:12 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:47:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => d0a4efe3bdccfa78620a93a70402e7dc
+            [Date] => 1 Sep, 2020 @ 16:47
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.06629
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => LYwjGK/ZWTK8uYFP7aChme8ICPoPTt7BGjYDV84mqD8=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => d0a4efe3bdccfa78620a93a70402e7dc
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:47:12 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:48:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 7655dc091da2fd599329bd86ad5a30eb
+            [Date] => 1 Sep, 2020 @ 16:48
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08875
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => t6HPyHetnmlNrDYNaggQen96EuODtC86nT5ul1wHDnY=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 7655dc091da2fd599329bd86ad5a30eb
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:48:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:48:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 7655dc091da2fd599329bd86ad5a30eb
+            [Date] => 1 Sep, 2020 @ 16:48
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.07315
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => BoxCXYYYApd8m7WvCuDPLkkVMj2ZSSP6wt0DJFZsjVE=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 7655dc091da2fd599329bd86ad5a30eb
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:48:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:50:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 77ab68f88c083c16de9f411a26f1922d
+            [Date] => 1 Sep, 2020 @ 16:50
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08958
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => loIGWsHD/jGi7HWhGi/IwyeZzP3CTppqVOAUYaPSlhE=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 77ab68f88c083c16de9f411a26f1922d
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:50:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:50:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 77ab68f88c083c16de9f411a26f1922d
+            [Date] => 1 Sep, 2020 @ 16:50
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.07152
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => iR0iX9tgUNtve/EClBEwIbrxnZzaiZFDcBKM2tsiOqA=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 77ab68f88c083c16de9f411a26f1922d
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:50:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:51:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 499f66d28e22ae2aa44056811b4daa12
+            [Date] => 1 Sep, 2020 @ 16:51
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.11596
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => /IJr17kkykXsRMjEF1ED6XpjXZg0kAGXQul8wuVc3Xw=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 499f66d28e22ae2aa44056811b4daa12
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:51:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:52:14+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1a12d52e04914cc1456aa970c5f33200
+            [Date] => 1 Sep, 2020 @ 16:52
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08295
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => /0+oLFZAzo1CVpcvxeaemWDaOdR5vAjW+L3vIa3bQM8=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 1a12d52e04914cc1456aa970c5f33200
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:52:14 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:52:14+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1a12d52e04914cc1456aa970c5f33200
+            [Date] => 1 Sep, 2020 @ 16:52
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08367
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => qIevyVXOSSObVMmSxyJO+rD/x/HSNuqCViF7biVfKLM=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 1a12d52e04914cc1456aa970c5f33200
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:52:14 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:55:57+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 7008844af9652ef2f57cad92478c5264
+            [Date] => 1 Sep, 2020 @ 16:55
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08463
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => gWG2htmwQIdAkwZ3I8R3CnPA6Vh1ea2uMTaYzTYlF68=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 7008844af9652ef2f57cad92478c5264
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:55:57 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T16:56:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 5a41bd518cab0b4bd70138c74fde29b2
+            [Date] => 1 Sep, 2020 @ 16:56
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08404
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 0ZN8HMWXZchUHr/Ifh8Agxp/UUvcT8t+rrQ59mAL8bg=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 5a41bd518cab0b4bd70138c74fde29b2
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 16:56:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:21:56+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 77397956989fd2baab98e4bb434002c9
+            [Date] => 1 Sep, 2020 @ 17:21
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08139
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => ZyC0rkxix/urJ5mCCvWd2QB+O0iyHdIerpGoHWWBwO4=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 77397956989fd2baab98e4bb434002c9
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:21:56 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:23:47+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 5dfb32c685cfc3878b9f12e22d3d10f8
+            [Date] => 1 Sep, 2020 @ 17:23
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.07663
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 3qnwzGzaIWmBuzPBaXTxhazA2pRrmGj4MQyeKP1V9fc=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 5dfb32c685cfc3878b9f12e22d3d10f8
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:23:47 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:24:25+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 47d703336e07d8f37004889562afd215
+            [Date] => 1 Sep, 2020 @ 17:24
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.12961
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => Z9i4kS+hQ6RTe+DrAfFIJHK2nCZVxDUsbjn3beZiX3Y=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 47d703336e07d8f37004889562afd215
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:24:25 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:26:25+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e23cd2c1e7e04dc72870b3e5a5c31f29
+            [Date] => 1 Sep, 2020 @ 17:26
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08841
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => y25WBxeYtcdaqLDSBd8tKgoXN5oH4aF1NHdpMTEqCgU=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => e23cd2c1e7e04dc72870b3e5a5c31f29
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:26:25 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:28:24+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6f58362d02ffe1aa1a5016c9c43e75e2
+            [Date] => 1 Sep, 2020 @ 17:28
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.0844
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => eGW9XyJmQuVxZ9Cu0TdPoGASZYEcQ13s3xgOaGtZX6I=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 6f58362d02ffe1aa1a5016c9c43e75e2
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:28:24 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:28:24+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6f58362d02ffe1aa1a5016c9c43e75e2
+            [Date] => 1 Sep, 2020 @ 17:28
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08914
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => YwA9Nh6tmmGGcm3Qlg5kKiUfTCKPakrnqWQrbueQD5E=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 6f58362d02ffe1aa1a5016c9c43e75e2
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:28:24 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:30:42+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1e59ea4d278d7fcecc64a551ff1b8da3
+            [Date] => 1 Sep, 2020 @ 17:30
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.0736
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => plT142uxUwb2g2b+TQ08W33EN3JttGZbjG4UrCVnlSA=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 1e59ea4d278d7fcecc64a551ff1b8da3
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:30:42 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:43:08+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 4769df25a2c3d72ec8e6fd5b5c833cf7
+            [Date] => 1 Sep, 2020 @ 17:43
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.34416
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => vgywT7GQ4HmtsBtIfB/R0WSdExXP5UWTcNQX7fvVBUk=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 4769df25a2c3d72ec8e6fd5b5c833cf7
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:43:08 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T17:43:08+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 81aa3f7b98af7705a2f7d99e8b67c49a
+            [Date] => 1 Sep, 2020 @ 17:43
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.1595
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => vgywT7GQ4HmtsBtIfB/R0WSdExXP5UWTcNQX7fvVBUk=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 81aa3f7b98af7705a2f7d99e8b67c49a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 17:43:08 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T18:05:38+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cd50cd500c7df3435a471dcc813ab565
+            [Date] => 1 Sep, 2020 @ 18:05
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.10576
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => EFH4+FbN02WIJNK+t2+yyKsaolbOImSXW//sFb0peMY=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cd50cd500c7df3435a471dcc813ab565
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 18:05:38 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:07:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 746c5dc4fa2406b507ecf8af5c17071d
+            [Date] => 1 Sep, 2020 @ 19:07
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.10251
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => oE3S0YK8OMMqZluTvQttgp5/bajwtpRg1oy4SIDmF7E=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 746c5dc4fa2406b507ecf8af5c17071d
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:07:12 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:09:45+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6f7b992a548734df724002210c90ab2f
+            [Date] => 1 Sep, 2020 @ 19:09
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08455
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => IvTBqrdfKfupgAXSojQSzYgSvupUs7Xtk3aZCJHciKY=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 6f7b992a548734df724002210c90ab2f
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:09:45 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:10:35+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 8df475da628ee684ae583a5cf34ca42f
+            [Date] => 1 Sep, 2020 @ 19:10
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08647
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 74s7V68GiNZu7ZHqxnjCx9ctVABgskzRpmGWLXUTnP4=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 8df475da628ee684ae583a5cf34ca42f
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:10:35 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:12:30+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => b2770136fa1431ccf44344056a070fc3
+            [Date] => 1 Sep, 2020 @ 19:12
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08628
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => CpBzHIjGWACGpuiNGrDrb90dIj3SHkWHJQkDz1bTnK8=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => b2770136fa1431ccf44344056a070fc3
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:12:30 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:14:14+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 69995144f0c18ee5895972df58273cf6
+            [Date] => 1 Sep, 2020 @ 19:14
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.07876
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => /tO4kchKCUxkion8HYiF0D8DJzKPNENpvCSzOEIpK5o=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 69995144f0c18ee5895972df58273cf6
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:14:14 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:16:43+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => c4096ef43c1dbd71263f441ce41a02de
+            [Date] => 1 Sep, 2020 @ 19:16
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.09118
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => OdHW2F+8eSsYuwILOeyZRuC60iMJW3+rn1/qiEotAEc=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => c4096ef43c1dbd71263f441ce41a02de
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:16:43 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:20:14+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 1020fa5edf01e153b023ca03e01c0e5a
+            [Date] => 1 Sep, 2020 @ 19:20
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08536
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => jlU6FluRzgGAuSqZq8vpkwvPZReKNiLF6qpGAhgXcds=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => 1020fa5edf01e153b023ca03e01c0e5a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:20:14 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:24:13+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => b744f965cac7538c5852f3cd3d044d93
+            [Date] => 1 Sep, 2020 @ 19:24
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.12074
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => MwJ8LOuCkxCsYC4GizIVRTiEbB6g2e7ibbWP3YruXJ8=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => b744f965cac7538c5852f3cd3d044d93
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:24:13 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:25:20+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 713599bd313858018c77501ddd742368
+            [Date] => 1 Sep, 2020 @ 19:25
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.1458
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => Stbe6MM9OJuxNYC31E+L2BouLbDStnAf6JyJFCSsCJs=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 713599bd313858018c77501ddd742368
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:25:20 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:25:20+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 3f36894911e568b76dac9233306733fa
+            [Date] => 1 Sep, 2020 @ 19:25
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.10231
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => Stbe6MM9OJuxNYC31E+L2BouLbDStnAf6JyJFCSsCJs=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 3f36894911e568b76dac9233306733fa
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:25:20 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:25:21+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 155a7f59652605364852019919658481
+            [Date] => 1 Sep, 2020 @ 19:25
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.20834
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.updated
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => gA9Yn5RR4recaspSA5pvtaEUn8OIXggA2/itZ9fbwmM=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => 155a7f59652605364852019919658481
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:25:21 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:25:21+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 155a7f59652605364852019919658481
+            [Date] => 1 Sep, 2020 @ 19:25
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.26427
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.updated
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => TEOrs61XpHKT7Rfn68CbcQKkxkcyM1o9QhFZaO33TBk=
+                            [X-WC-Webhook-ID] => 3
+                            [X-WC-Webhook-Delivery-ID] => 155a7f59652605364852019919658481
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:25:21 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:37:28+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 69df98233f1d1be6c8876f00365e32d5
+            [Date] => 1 Sep, 2020 @ 19:37
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.1289
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => Es2BNabptORE+heMEtVQKM33XSwXl8Vk946Q+pwN/+g=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 69df98233f1d1be6c8876f00365e32d5
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:37:28 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T19:37:28+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 80272cc686a368575f41327a4b5abebd
+            [Date] => 1 Sep, 2020 @ 19:37
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08116
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => Es2BNabptORE+heMEtVQKM33XSwXl8Vk946Q+pwN/+g=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 80272cc686a368575f41327a4b5abebd
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 19:37:28 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T20:16:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 3554bfdd0ba54aa0da49c09a54ce07d8
+            [Date] => 1 Sep, 2020 @ 20:16
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.13034
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => xA2d2oj3n/srUTu0wWRJ4/SY+gFYysyuWGQjHMABYDk=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 3554bfdd0ba54aa0da49c09a54ce07d8
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 20:16:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T20:16:16+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 27a0e0e888a3edb08f7394d9ec06c65b
+            [Date] => 1 Sep, 2020 @ 20:16
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.14244
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => xA2d2oj3n/srUTu0wWRJ4/SY+gFYysyuWGQjHMABYDk=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 27a0e0e888a3edb08f7394d9ec06c65b
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 20:16:16 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T20:56:06+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => ee3b6fca00bd695f4a27e157cd3daa94
+            [Date] => 1 Sep, 2020 @ 20:56
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.15742
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => t7No+wNDgdVj3mhZpc0H7S/wUq/1JwAQQcIyeGkjmr8=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => ee3b6fca00bd695f4a27e157cd3daa94
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 20:56:06 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T21:15:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cad7e243993dd76faee6a458b72cb51c
+            [Date] => 1 Sep, 2020 @ 21:15
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.0772
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => y2lSAEQNJzi1CUyr1ltphgAnBAtyz2N9HzYaeClDW1A=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cad7e243993dd76faee6a458b72cb51c
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 21:15:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T21:15:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cad7e243993dd76faee6a458b72cb51c
+            [Date] => 1 Sep, 2020 @ 21:15
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.07015
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 7REkz3UGJYVguPhB/1CcQYe4ESmVmlhLye9DWhF40p8=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cad7e243993dd76faee6a458b72cb51c
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 21:15:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T21:15:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => cad7e243993dd76faee6a458b72cb51c
+            [Date] => 1 Sep, 2020 @ 21:15
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.06801
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => 23vwZSFEBiUDvSh2QSufw8YLWJInXvdm3VkrpszTlBc=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => cad7e243993dd76faee6a458b72cb51c
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 21:15:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T21:28:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 6311e96977cfbe20dff3103873fe12f6
+            [Date] => 1 Sep, 2020 @ 21:28
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.18974
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => QDy2HPNPIgO/Bi9mgQTh08hP4RhlEUPbO7gwVAu/Xtw=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 6311e96977cfbe20dff3103873fe12f6
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 21:28:17 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T21:28:17+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e73db36c36a1dc9091705ed5db27608f
+            [Date] => 1 Sep, 2020 @ 21:28
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.13533
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => QDy2HPNPIgO/Bi9mgQTh08hP4RhlEUPbO7gwVAu/Xtw=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => e73db36c36a1dc9091705ed5db27608f
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 21:28:17 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T21:29:19+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 88c3c809a6d3bd83bdd252abb0baf58b
+            [Date] => 1 Sep, 2020 @ 21:29
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.17342
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => At+he+vdYtWbQhpdxP/vNFNIa+bTSoSXtnyJI0DQH3Q=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 88c3c809a6d3bd83bdd252abb0baf58b
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 21:29:19 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T22:00:23+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => af51b4dd469a2f4b5d2864b64fb041fe
+            [Date] => 1 Sep, 2020 @ 22:00
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.08642
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => product.deleted
+                            [X-WC-Webhook-Resource] => product
+                            [X-WC-Webhook-Event] => deleted
+                            [X-WC-Webhook-Signature] => Z/IvHLYJREGAVJRC7Zv36MBsVGOKFpJTHPz5IAiOsFg=
+                            [X-WC-Webhook-ID] => 5
+                            [X-WC-Webhook-Delivery-ID] => af51b4dd469a2f4b5d2864b64fb041fe
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 22:00:23 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T22:06:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 0e36d2329d4df9ea7dd168136ad46997
+            [Date] => 1 Sep, 2020 @ 22:06
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.12807
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => bhgwSntXEzvHAyVXH1BXkS3cNyLBXw/kBiEEHBpNNq8=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => 0e36d2329d4df9ea7dd168136ad46997
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 22:06:12 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T22:06:12+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 8c9ccf7152b0815c53017ae3eeceb185
+            [Date] => 1 Sep, 2020 @ 22:06
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.10624
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => bhgwSntXEzvHAyVXH1BXkS3cNyLBXw/kBiEEHBpNNq8=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 8c9ccf7152b0815c53017ae3eeceb185
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 22:06:12 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T22:07:20+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 010ad4bc611bc332fd146a5efcf13b15
+            [Date] => 1 Sep, 2020 @ 22:07
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.12659
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => KCWw3P9+6MjszgBbbIt6MQaxRaZfQMelUyVXassT5lg=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 010ad4bc611bc332fd146a5efcf13b15
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 22:07:20 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T22:10:21+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => f4b42604e3859171abdf3ab94741b85a
+            [Date] => 1 Sep, 2020 @ 22:10
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.12252
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => rHdFMaJyNUG0dCsiENsIl+KU5vXB5BZO/CHLY4n1yjQ=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => f4b42604e3859171abdf3ab94741b85a
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 22:10:21 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T23:24:11+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => f8d3984cdb43deec6611b9ab4ac9db39
+            [Date] => 1 Sep, 2020 @ 23:24
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.11919
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => dniqGuOPUMwdstd+mEl02NagJkg2cHDSrVSVZ94xSY0=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => f8d3984cdb43deec6611b9ab4ac9db39
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 23:24:11 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T23:28:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => e456fa9637d5db784952e0ecf04d4879
+            [Date] => 1 Sep, 2020 @ 23:28
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.1491
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.created
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => created
+                            [X-WC-Webhook-Signature] => 0Vzu+1XIdOmm/ekgOofAWsmH8+9SNONiQLfWkFs799k=
+                            [X-WC-Webhook-ID] => 2
+                            [X-WC-Webhook-Delivery-ID] => e456fa9637d5db784952e0ecf04d4879
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 23:28:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+
+2020-09-01T23:28:15+00:00 INFO Array
+(
+    [Webhook Delivery] => Array
+        (
+            [Delivery ID] => 22738600df99d6803d2460098e713bfa
+            [Date] => 1 Sep, 2020 @ 23:28
+            [URL] => https://a.klaviyo.com/api/webhook/integration/woocommerce?c=QWXMfe
+            [Duration] => 0.10315
+            [Request] => Array
+                (
+                    [Method] => POST
+                    [Headers] => Array
+                        (
+                            [User-Agent] => WooCommerce/3.6.5 Hookshot (WordPress/5.4.2)
+                            [Content-Type] => application/json
+                            [X-WC-Webhook-Source] => https://powerbuildingoficial.com/
+                            [X-WC-Webhook-Topic] => order.updated
+                            [X-WC-Webhook-Resource] => order
+                            [X-WC-Webhook-Event] => updated
+                            [X-WC-Webhook-Signature] => 0Vzu+1XIdOmm/ekgOofAWsmH8+9SNONiQLfWkFs799k=
+                            [X-WC-Webhook-ID] => 1
+                            [X-WC-Webhook-Delivery-ID] => 22738600df99d6803d2460098e713bfa
+                        )
+
+                )
+
+            [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+            [Response] => Array
+                (
+                    [Code] => 200
+                    [Message] => OK
+                    [Headers] => Requests_Utility_CaseInsensitiveDictionary Object
+                        (
+                            [data:protected] => Array
+                                (
+                                    [content-encoding] => gzip
+                                    [content-type] => text/html; charset=utf-8
+                                    [date] => Tue, 01 Sep 2020 23:28:15 GMT
+                                    [server] => nginx
+                                    [vary] => Array
+                                        (
+                                            [0] => Accept-Encoding
+                                            [1] => Cookie
+                                        )
+
+                                    [x-upstream] => Array
+                                        (
+                                            [0] => Async-Api
+                                            [1] => Async-Api
+                                        )
+
+                                    [content-length] => 21
+                                )
+
+                        )
+
+                    [Body] => Webhook body is not logged unless WP_DEBUG mode is turned on. This is to avoid the storing of personal data in the logs.
+                )
+
+        )
+
+)
+

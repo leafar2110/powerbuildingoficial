@@ -1,0 +1,32 @@
+2020-09-07T00:54:06+00:00 CRITICAL Uncaught Google_Auth_Exception: Error fetching OAuth2 access token, message: 'invalid_grant: Bad Request' in /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Auth/OAuth2.php:120
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Client.php(126): Google_Auth_OAuth2->authenticate('4/3wFXdaXBBT4DV...')
+#1 /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/super_socializer.php(427): Google_Client->authenticate('4/3wFXdaXBBT4DV...')
+#2 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): the_champ_connect(Object(WP))
+#3 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#5 /var/www/powerbuildingoficial.com/wp-includes/class-wp.php(388): do_action_ref_array('parse_request', Array)
+#6 /var/www/powerbuildingoficial.com/wp-includes/class-wp.php(739): WP- en /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Auth/OAuth2.php en la línea 120
+
+2020-09-07T00:54:10+00:00 CRITICAL Uncaught Google_Auth_Exception: Error fetching OAuth2 access token, message: 'invalid_grant: Bad Request' in /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Auth/OAuth2.php:120
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Client.php(126): Google_Auth_OAuth2->authenticate('4/3wFXdaXBBT4DV...')
+#1 /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/super_socializer.php(427): Google_Client->authenticate('4/3wFXdaXBBT4DV...')
+#2 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): the_champ_connect(Object(WP))
+#3 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#5 /var/www/powerbuildingoficial.com/wp-includes/class-wp.php(388): do_action_ref_array('parse_request', Array)
+#6 /var/www/powerbuildingoficial.com/wp-includes/class-wp.php(739): WP- en /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Auth/OAuth2.php en la línea 120
+
+2020-09-07T00:54:14+00:00 CRITICAL Uncaught Google_Auth_Exception: Error fetching OAuth2 access token, message: 'invalid_grant: Bad Request' in /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Auth/OAuth2.php:120
+Stack trace:
+#0 /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Client.php(126): Google_Auth_OAuth2->authenticate('4/3wFXdaXBBT4DV...')
+#1 /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/super_socializer.php(427): Google_Client->authenticate('4/3wFXdaXBBT4DV...')
+#2 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(287): the_champ_connect(Object(WP))
+#3 /var/www/powerbuildingoficial.com/wp-includes/class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#4 /var/www/powerbuildingoficial.com/wp-includes/plugin.php(544): WP_Hook->do_action(Array)
+#5 /var/www/powerbuildingoficial.com/wp-includes/class-wp.php(388): do_action_ref_array('parse_request', Array)
+#6 /var/www/powerbuildingoficial.com/wp-includes/class-wp.php(739): WP- en /var/www/powerbuildingoficial.com/wp-content/plugins/super-socializer/library/Google/Auth/OAuth2.php en la línea 120
+
+2020-09-07T17:18:24+00:00 CRITICAL syntax error, unexpected ''order'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' en /var/www/powerbuildingoficial.com/wp-content/themes/powerbuildingoficial/page-biografia.php en la línea 305
+

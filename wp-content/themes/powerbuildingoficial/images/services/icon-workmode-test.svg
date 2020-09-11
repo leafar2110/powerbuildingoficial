@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35.404" height="46.479" viewBox="0 0 35.404 46.479">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.57" y1="1.269" x2="1.393" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ee4037"/>
+      <stop offset="1" stop-color="#c2222e"/>
+    </linearGradient>
+  </defs>
+  <g id="test" transform="translate(0 0)">
+    <path id="Trazado_79" data-name="Trazado 79" d="M10.893,0V2.723H0V46.479H35.4V2.723H24.51V0Zm2.723,2.723h8.17V5.447h-8.17ZM32.68,5.447V43.755H2.723V5.447h8.17V8.17H24.51V5.447Zm0,0" fill="url(#linear-gradient)"/>
+    <path id="Trazado_80" data-name="Trazado 80" d="M60,130.984H84.51V120H60Zm2.723-8.261H81.787v5.537H62.723Zm0,0" transform="translate(-54.553 -109.107)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_81" data-name="Trazado 81" d="M60,271H84.51v2.723H60Zm0,0" transform="translate(-54.553 -246.399)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_82" data-name="Trazado 82" d="M60,331H84.51v2.723H60Zm0,0" transform="translate(-54.553 -300.952)" fill="url(#linear-gradient)"/>
+    <path id="Trazado_83" data-name="Trazado 83" d="M60,391H84.51v2.723H60Zm0,0" transform="translate(-54.553 -355.506)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
